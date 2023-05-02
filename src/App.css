@@ -3,13 +3,38 @@
   padding: 0;
   box-sizing: border-box;
 }
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  --background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  --inspect: solid red 1px;
+  --headingColor: #1e1f36;
+  --textColor: #4b4c5f;
 }
 
 body {
   font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  height: auto;
+  width: fit-content;
+  background: white;
+  background-image: url(./assets/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 23px;
+  padding: 65px 95px;
+}
+h1 {
+  font-size: 2rem;
+  color: var(--headingColor);
+}
+.questions-container {
+  /* border: var(--inspect); */
+  margin-top: 35px;
+  width: 251px;
 }
