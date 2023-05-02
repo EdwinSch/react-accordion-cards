@@ -29,6 +29,7 @@ main {
   background-position: bottom;
   border-radius: 23px;
   padding: 65px;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
 }
 h1 {
   font-size: 2rem;
@@ -75,4 +76,24 @@ h2 {
   border: none;
   background: none;
   transition: 250ms ease;
+}
+
+@media only screen and (max-width: 520px) {
+  body {
+    align-items: start;
+    padding: 20px;
+  }
+  main {
+    width: auto;
+    padding: 24px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .questions-container {
+    width: 100%;
+  }
+  .heading-wrapper {
+    gap: 20px;
+  }
 }
